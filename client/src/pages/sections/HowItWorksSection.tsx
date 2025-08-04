@@ -1,33 +1,29 @@
+
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 
 export const HowItWorksSection = (): JSX.Element => {
   // Data for the steps
   const steps = [
     {
       number: "01",
-      title: "Post a Loan Request",
-      description: "Choose your BTC collateral and desired loan amount.",
-      icon: "/figmaAssets/component-1-4.svg",
+      title: "Connect Wallet",
+      description: "Connect your Bitcoin wallet to start the process. Your keys, your Bitcoin - always.",
     },
     {
-      number: "02",
-      title: "Receive Lender Offers",
-      description: "Lenders approve and sign offers. You select one.",
-      icon: "/figmaAssets/component-1-12.svg",
+      number: "02", 
+      title: "Lock Collateral",
+      description: "Deposit Bitcoin as collateral in our secure smart contract while maintaining custody.",
     },
     {
       number: "03",
-      title: "Lock BTC, Trigger Loan",
-      description: "BTC is script-locked, and USDT is transferred.",
-      icon: "/figmaAssets/component-1-8.svg",
+      title: "Access Liquidity", 
+      description: "Borrow up to 50% of your Bitcoin value with competitive rates and flexible terms.",
     },
     {
       number: "04",
-      title: "Manage the Loan",
-      description: "Pay interest, redeem, or reclaim funds on fallback.",
-      icon: "/figmaAssets/component-1-10.svg",
+      title: "Repay & Unlock",
+      description: "Repay your loan anytime to unlock your Bitcoin. No penalties, complete flexibility.",
     },
   ];
 
@@ -43,54 +39,73 @@ export const HowItWorksSection = (): JSX.Element => {
 
           <div className="max-w-[588px] w-full">
             <p className="font-normal text-wwwfigmacomriver-bed text-[16.4px] text-center leading-[24.5px]">
-              Get liquidity from your Bitcoin in four simple steps while
-              maintaining complete control of your assets.
+              Get liquidity from your Bitcoin in four simple steps
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
           {steps.map((step, index) => (
-            <Card
-              key={index}
-              className="relative border border-solid bg-wwwfigmacomwhite rounded-[12.75px] overflow-hidden"
-              data-testid={`card-step-${index}`}
-            >
-              {/* Corner step number */}
-              <div className="absolute top-4 left-4 flex w-8 h-8 items-center justify-center bg-wwwfigmacomorange-primary rounded-full">
-                <div className="font-bold text-wwwfigmacomwhite text-xs">
+            <div key={index} className="flex flex-col items-center text-center">
+              {/* Orange step number circle */}
+              <div className="flex w-12 h-12 items-center justify-center bg-wwwfigmacomorange-primary rounded-full mb-6">
+                <div className="font-bold text-wwwfigmacomwhite text-sm">
                   {step.number}
                 </div>
               </div>
 
-              <CardContent className="p-[22px] pt-16 text-center">
-                <div className="flex flex-col items-center gap-4">
-                  <div className="flex w-16 h-16 items-center justify-center bg-wwwfigmacomorange-light rounded-full">
-                    <img
-                      className="w-8 h-8"
-                      alt={`Step ${step.number} icon`}
-                      src={step.icon}
-                      data-testid={`img-step-icon-${index}`}
-                    />
-                  </div>
+              {/* Icon container with light orange background */}
+              <div className="flex w-16 h-16 items-center justify-center bg-wwwfigmacomorange-light rounded-xl mb-6">
+                {index === 0 && (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7ZM20 19H4V9H20V19ZM8 11H6V13H8V11ZM18 11H10V13H18V11Z" fill="#F57F17"/>
+                  </svg>
+                )}
+                {index === 1 && (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 8H17V6C17 3.24 14.76 1 12 1S7 3.24 7 6V8H6C4.9 8 4 8.9 4 10V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V10C20 8.9 19.1 8 18 8ZM9 6C9 4.34 10.34 3 12 3S15 4.34 15 6V8H9V6ZM18 20H6V10H18V20ZM12 17C13.1 17 14 16.1 14 15S13.1 13 12 13S10 13.9 10 15S10.9 17 12 17Z" fill="#F57F17"/>
+                  </svg>
+                )}
+                {index === 2 && (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.8 10.9C9.53 10.31 8.8 9.7 8.8 8.75C8.8 7.66 9.81 6.9 11.5 6.9C13.28 6.9 13.94 7.75 14 9H16.21C16.14 7.28 15.09 5.7 13 5.19V3H10V5.16C8.06 5.58 6.5 6.84 6.5 8.77C6.5 11.08 8.41 12.23 11.2 12.9C13.7 13.5 14.2 14.38 14.2 15.31C14.2 16 13.71 17.1 11.5 17.1C9.44 17.1 8.63 16.18 8.5 15H6.32C6.44 17.19 8.08 18.42 10 18.83V21H13V18.85C14.95 18.5 16.5 17.35 16.5 15.3C16.5 12.46 14.07 11.5 11.8 10.9Z" fill="#F57F17"/>
+                  </svg>
+                )}
+                {index === 3 && (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6V9L16 5L12 1V4C7.58 4 4 7.58 4 12C4 13.57 4.46 15.03 5.24 16.26L6.7 14.8C6.25 13.97 6 13 6 12C6 8.69 8.69 6 12 6ZM18.76 7.74L17.3 9.2C17.74 10.04 18 11 18 12C18 15.31 15.31 18 12 18V15L8 19L12 23V20C16.42 20 20 16.42 20 12C20 10.43 19.54 8.97 18.76 7.74Z" fill="#F57F17"/>
+                  </svg>
+                )}
+              </div>
 
-                  <h3 
-                    className="font-bold text-wwwfigmacomebony text-base leading-[24px]"
-                    data-testid={`text-step-title-${index}`}
-                  >
-                    {step.title}
-                  </h3>
+              <h3 className="font-bold text-wwwfigmacomebony text-base leading-[24px] mb-3">
+                {step.title}
+              </h3>
 
-                  <p 
-                    className="font-normal text-wwwfigmacomriver-bed text-sm leading-[20px]"
-                    data-testid={`text-step-description-${index}`}
-                  >
-                    {step.description}
-                  </p>
+              <p className="font-normal text-wwwfigmacomriver-bed text-sm leading-[20px]">
+                {step.description}
+              </p>
+
+              {/* Arrow connector for all except last */}
+              {index < steps.length - 1 && (
+                <div className="hidden lg:block absolute" style={{left: `${(index + 1) * 25}%`, transform: 'translateX(-50%)', top: '60px'}}>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="#F57F17"/>
+                  </svg>
                 </div>
-              </CardContent>
-            </Card>
+              )}
+            </div>
           ))}
+        </div>
+
+        {/* Start Now button */}
+        <div className="mt-8">
+          <Button className="bg-wwwfigmacomorange-primary hover:bg-wwwfigmacomorange-primary/90 text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2">
+            Start Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor"/>
+            </svg>
+          </Button>
         </div>
       </div>
     </section>
