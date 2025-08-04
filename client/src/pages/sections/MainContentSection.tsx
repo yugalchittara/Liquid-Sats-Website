@@ -24,8 +24,8 @@ export const MainContentSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="px-[175px] py-[70px] bg-[#f8fafb] flex flex-col items-start relative w-full">
-      <div className="flex flex-col max-w-[1120px] items-start gap-14 px-[21px] py-0 relative w-full">
+    <section className="flex flex-col items-center py-[70px] px-6 md:px-[175px] w-full bg-[#f8fafb]">
+      <div className="flex flex-col max-w-[1120px] items-center gap-14 w-full">
         <div className="flex flex-col items-center gap-3.5 relative self-stretch w-full">
           <div className="flex flex-col items-center relative self-stretch w-full">
             <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Inter',Helvetica] font-bold text-wwwfigmacomebony text-[29.8px] text-center tracking-[0] leading-[35px]">
@@ -43,44 +43,36 @@ export const MainContentSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="flex items-start justify-center gap-7 relative self-stretch w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
           {securityFeatures.map((feature, index) => (
             <Card
               key={`security-feature-${index}`}
-              className="flex flex-col items-start p-[29px] relative flex-1 self-stretch bg-wwwfigmacomwhite rounded-[12.75px] border border-solid"
+              className="bg-wwwfigmacomwhite rounded-[12.75px] border border-solid"
+              data-testid={`card-security-${index}`}
             >
-              <CardContent className="relative self-stretch w-full h-[178.5px] p-0">
-                <div className="flex w-14 h-14 items-center justify-center absolute top-0 left-[113px] bg-wwwfigmacomfeta rounded-[16777200px]">
-                  <img
-                    className="relative w-7 h-7"
-                    alt="Security feature icon"
-                    src={feature.icon}
-                  />
-                </div>
+              <CardContent className="p-[29px] text-center">
+                <div className="flex flex-col items-center gap-4">
+                  <div className="flex w-14 h-14 items-center justify-center bg-wwwfigmacomfeta rounded-full">
+                    <img
+                      className="w-7 h-7"
+                      alt="Security feature icon"
+                      src={feature.icon}
+                      data-testid={`img-security-icon-${index}`}
+                    />
+                  </div>
 
-                <div className="w-[283px] items-center absolute top-[77px] left-0 flex flex-col">
-                  <h3 className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-bold text-wwwfigmacomebony text-sm text-center tracking-[0] leading-[21px] whitespace-nowrap">
+                  <h3 
+                    className="font-bold text-wwwfigmacomebony text-sm leading-[21px]"
+                    data-testid={`text-security-title-${index}`}
+                  >
                     {feature.title}
                   </h3>
-                </div>
 
-                <div className="flex flex-col w-[283px] items-center absolute top-28 left-0">
-                  <p className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-wwwfigmacomriver-bed text-[13.6px] text-center tracking-[0] leading-[22.8px]">
-                    {feature.description.includes("BTC") ? (
-                      <>
-                        {feature.description.split("BTC")[0]}BTC
-                        <br />
-                        {feature.description.split("BTC")[1]}
-                      </>
-                    ) : feature.description.includes("aren't") ? (
-                      <>
-                        {feature.description.split("aren't")[0]}aren&#39;t
-                        <br />
-                        {feature.description.split("aren't")[1]}
-                      </>
-                    ) : (
-                      feature.description
-                    )}
+                  <p 
+                    className="font-normal text-wwwfigmacomriver-bed text-[13.6px] leading-[22.8px]"
+                    data-testid={`text-security-description-${index}`}
+                  >
+                    {feature.description}
                   </p>
                 </div>
               </CardContent>

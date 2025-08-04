@@ -1,101 +1,90 @@
-import { ChevronDownIcon } from "lucide-react";
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Select, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export const FeaturesSection = (): JSX.Element => {
-  // Loan calculator data
-  const calculatorResults = [
+  // Feature card data for mapping
+  const featureCards = [
     {
-      value: "10.5%",
-      label: "Annual Interest Rate",
+      icon: "/figmaAssets/component-1-14.svg",
+      title: "50% Initial Max LTV",
+      description:
+        "Lower your risk at any time with customizable collateral ratios.",
     },
     {
-      value: "$0.00",
-      label: "Origination Fee",
+      icon: "/figmaAssets/component-1-3.svg",
+      title: "Starting at 9.5% APR",
+      description: "Tiered rates based on loan size and duration.",
     },
     {
-      value: "$4,000",
-      label: "Collateral Value",
+      icon: "/figmaAssets/component-1-17.svg",
+      title: "Borrow any amount on Your Terms",
+      description:
+        "As low as $1000. Configure duration, and raise loan request.",
     },
     {
-      value: "50%",
-      label: "LTV Ratio",
-    },
-    {
-      value: "$2,017.5",
-      label: "Payment at Maturity",
+      icon: "/figmaAssets/component-1-19.svg",
+      title: "Transparent Pricing",
+      description: "0% origination or early repayment fees. Only pay interest.",
     },
   ];
 
   return (
-    <section className="px-6 py-[70px] bg-[#f8fafb] flex flex-col items-center relative w-full md:px-[175px]">
-      <div className="flex flex-col items-center gap-14 px-5 py-0 relative w-full max-w-[1120px]">
-        <header className="flex flex-col items-center gap-3.5 w-full">
-          <h2 className="font-bold text-wwwfigmacomebony text-[29.8px] text-center leading-[35px] w-full">
-            Try Our Loan Calculator
+    <section className="flex flex-col items-center py-[70px] px-6 md:px-[175px] w-full bg-wwwfigmacomwhite">
+      <div className="flex flex-col max-w-[1120px] items-center gap-14 w-full">
+        {/* Section header */}
+        <div className="flex flex-col items-center gap-3.5 w-full">
+          <h2 className="font-bold text-wwwfigmacomebony text-3xl text-center leading-[35px]">
+            Why Choose LiquidSat
           </h2>
-          <p className="font-normal text-wwwfigmacomriver-bed text-[16.4px] text-center leading-[24.5px] max-w-[588px]">
-            Enter your loan info and see your LiquidSat loan terms
+
+          <p className="max-w-[588px] font-normal text-wwwfigmacomriver-bed text-[16.4px] text-center leading-[24.5px]">
+            Experience the freedom of Bitcoin-backed lending with
+            industry-leading
+            <br />
+            terms and complete transparency.
           </p>
-        </header>
+        </div>
 
-        <Card className="w-full max-w-[1008px] border border-solid border-[#0000001a] shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a] bg-wwwfigmacomwhite rounded-[12.75px]">
-          <CardContent className="pt-7 pb-[50px] px-7">
-            <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-10">
-              <div className="flex flex-col items-start gap-5 flex-1 w-full">
-                <div className="flex flex-col items-start gap-2.5 w-full">
-                  <label className="font-www-figma-com-semantic-label font-[number:var(--www-figma-com-semantic-label-font-weight)] text-wwwfigmacomcod-gray text-[length:var(--www-figma-com-semantic-label-font-size)] tracking-[var(--www-figma-com-semantic-label-letter-spacing)] leading-[var(--www-figma-com-semantic-label-line-height)]">
-                    How much do you want to borrow?
-                  </label>
-                  <div className="relative w-full">
-                    <div className="absolute top-2.5 left-2.5 text-wwwfigmacompale-sky text-sm">
-                      $
-                    </div>
-                    <Input
-                      className="pl-[29px] h-[42px] bg-wwwfigmacomathens-gray rounded-[6.75px] font-www-figma-com-semantic-input font-[number:var(--www-figma-com-semantic-input-font-weight)] text-wwwfigmacomcod-gray text-[length:var(--www-figma-com-semantic-input-font-size)]"
-                      defaultValue="2000"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex flex-col items-start gap-2.5 w-full">
-                  <label className="font-www-figma-com-semantic-label font-[number:var(--www-figma-com-semantic-label-font-weight)] text-wwwfigmacomcod-gray text-[length:var(--www-figma-com-semantic-label-font-size)] tracking-[var(--www-figma-com-semantic-label-letter-spacing)] leading-[var(--www-figma-com-semantic-label-line-height)]">
-                    Choose your term length
-                  </label>
-                  <Select defaultValue="1month">
-                    <SelectTrigger className="h-[31.5px] bg-wwwfigmacomathens-gray rounded-[6.75px] font-normal text-wwwfigmacomcod-gray text-[15.1px]">
-                      <SelectValue placeholder="1 Month" />
-                      <ChevronDownIcon className="h-3.5 w-3.5" />
-                    </SelectTrigger>
-                  </Select>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-x-6 gap-y-5 flex-1">
-                {calculatorResults.slice(0, 4).map((item, index) => (
-                  <div key={index} className="flex flex-col h-[52px]">
-                    <div className="font-bold text-wwwfigmacomebony text-[26px] leading-[31.5px]">
-                      {item.value}
-                    </div>
-                    <div className="font-normal text-wwwfigmacomriver-bed text-[13.7px] leading-[21px]">
-                      {item.label}
+        {/* Feature cards grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+          {featureCards.map((card, index) => (
+            <Card
+              key={`feature-card-${index}`}
+              className="border border-solid rounded-[12.75px] bg-wwwfigmacomwhite"
+              data-testid={`card-feature-${index}`}
+            >
+              <CardContent className="pt-[22px] pb-[43px] px-[22px]">
+                <div className="flex items-start">
+                  <div className="mr-3.5">
+                    <div className="flex w-[42px] h-[42px] items-center justify-center bg-wwwfigmacomzumthor rounded-[8.75px]">
+                      <img
+                        className="w-[21px] h-[21px]"
+                        alt="Feature icon"
+                        src={card.icon}
+                        data-testid={`img-feature-icon-${index}`}
+                      />
                     </div>
                   </div>
-                ))}
-                <div className="flex flex-col h-[52px] col-span-2">
-                  <div className="font-bold text-wwwfigmacomebony text-[25.7px] leading-[31.5px]">
-                    {calculatorResults[4].value}
-                  </div>
-                  <div className="font-www-figma-com-inter-regular font-[number:var(--www-figma-com-inter-regular-font-weight)] text-wwwfigmacomriver-bed text-[length:var(--www-figma-com-inter-regular-font-size)] tracking-[var(--www-figma-com-inter-regular-letter-spacing)] leading-[var(--www-figma-com-inter-regular-line-height)]">
-                    {calculatorResults[4].label}
+
+                  <div className="flex flex-col gap-[7px]">
+                    <h3 
+                      className="font-bold text-wwwfigmacomebony text-sm leading-[21px]"
+                      data-testid={`text-feature-title-${index}`}
+                    >
+                      {card.title}
+                    </h3>
+                    <p 
+                      className="font-normal text-wwwfigmacomriver-bed text-[13.6px] leading-[22.8px]"
+                      data-testid={`text-feature-description-${index}`}
+                    >
+                      {card.description}
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );

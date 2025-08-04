@@ -1,54 +1,71 @@
-import { ArrowRightIcon } from "lucide-react";
 import React from "react";
-import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export const FAQSection = (): JSX.Element => {
+  // FAQ data for mapping
+  const faqItems = [
+    {
+      question: "How do I lock my BTC?",
+      answer: "Your BTC is locked using secure, script-based escrow technology that ensures your funds remain safe while being used as collateral.",
+    },
+    {
+      question: "What happens if I cancel a loan?",
+      answer: "If you cancel a loan request before it's funded, there are no fees. After funding, you can repay early without penalties.",
+    },
+    {
+      question: "Can I repay early?",
+      answer: "Yes, you can repay your loan early at any time with no prepayment penalties. You only pay interest for the time you used the funds.",
+    },
+    {
+      question: "Is this self-custodial?",
+      answer: "Yes, LiquidSat uses Bitcoin-native infrastructure with script-based escrow, so you maintain control over your Bitcoin throughout the process.",
+    },
+    {
+      question: "What happens if I default?",
+      answer: "If you're unable to repay, the collateral Bitcoin is transferred to the lender according to the loan terms. However, you have multiple options to avoid default.",
+    },
+  ];
+
   return (
-    <section className="py-12 px-6 md:px-12 lg:px-48 bg-gradient-to-b from-[rgba(249,250,251,1)] to-[rgba(255,255,255,1)] w-full">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10 w-full">
-        <div className="flex flex-col items-start gap-7 flex-1">
-          <div className="flex flex-col items-start gap-3 w-full">
-            <h1 className="self-stretch font-['Inter',Helvetica] text-4xl leading-[52.5px] tracking-tight">
-              <span className="font-bold text-[#101727]">Unlock Capital. </span>
-              <span className="font-bold text-wwwfigmacomblue-ribbon">
-                Stay
-                <br />
-                Bitcoin-True.
-              </span>
-            </h1>
+    <section className="py-[70px] bg-[#f8fafb] flex justify-center w-full">
+      <div className="flex flex-col max-w-[784px] items-center gap-14 px-6 w-full">
+        <div className="flex flex-col items-center gap-3.5 w-full">
+          <h2 className="font-bold text-wwwfigmacomebony text-[29.8px] text-center leading-[35px]">
+            Frequently Asked Questions
+          </h2>
+          <p className="font-normal text-wwwfigmacomriver-bed text-[16.4px] text-center leading-[24.5px] max-w-[588px]">
+            Get answers to common questions about Bitcoin-backed lending with LiquidSat.
+          </p>
+        </div>
 
-            <p className="self-stretch font-['Inter',Helvetica] text-wwwfigmacomriver-bed text-base leading-7">
-              Use your BTC without selling. Maintain self-custody while
-              accessing on-chain liquidity.
-            </p>
-          </div>
-
-          <div className="flex items-center gap-3.5 w-full">
-            <Button className="h-[35px] px-3.5 py-[10.5px] bg-wwwfigmacomblue-ribbon rounded-[6.75px] text-wwwfigmacomwhite">
-              <span className="font-www-figma-com-semantic-button text-[12.3px] leading-[17.5px]">
-                Go to App
-              </span>
-              <ArrowRightIcon className="ml-1.5 h-3.5 w-3.5" />
-            </Button>
-
-            <Button
-              variant="ghost"
-              className="h-[35px] px-7 py-[10.5px] rounded-[6.75px]"
+        <Accordion type="single" collapsible className="w-full">
+          {faqItems.map((item, index) => (
+            <AccordionItem
+              key={`faq-${index}`}
+              value={`item-${index}`}
+              className="mb-3.5 last:mb-0 border border-solid rounded-[12.75px] bg-wwwfigmacomwhite overflow-hidden"
+              data-testid={`accordion-faq-${index}`}
             >
-              <span className="font-www-figma-com-semantic-button text-[12.3px] leading-[17.5px] text-wwwfigmacomriver-bed">
-                How It Works
-              </span>
-            </Button>
-          </div>
-        </div>
-
-        <div className="flex justify-center items-center w-full md:w-[410px]">
-          <img
-            className="w-[303px] h-[294px] object-contain"
-            alt="Bitcoin logo"
-            src="/figmaAssets/hero-image-1.png"
-          />
-        </div>
+              <AccordionTrigger 
+                className="px-[22px] py-3.5 font-medium text-wwwfigmacomebony text-sm leading-[17.5px] hover:no-underline text-left"
+                data-testid={`trigger-faq-${index}`}
+              >
+                {item.question}
+              </AccordionTrigger>
+              <AccordionContent 
+                className="px-[22px] pb-3.5 font-normal text-wwwfigmacomriver-bed text-[13.6px] leading-[22.8px]"
+                data-testid={`content-faq-${index}`}
+              >
+                {item.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
     </section>
   );
