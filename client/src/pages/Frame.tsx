@@ -19,11 +19,11 @@ export const Frame = (): JSX.Element => {
         {/* Main content sections stacked vertically */}
         <div className="w-full pt-16">
           <HeroSection />
+          <FeaturesSection />
           <MainContentSection />
           <HowItWorksSection />
-          <FeaturesSection />
-          <LiquidityOptionsSection />
           <LoanCalculatorSection />
+          <LiquidityOptionsSection />
           <FAQSection />
           <FooterSection />
         </div>
