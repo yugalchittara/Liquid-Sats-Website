@@ -85,10 +85,10 @@ export const LiquidityOptionsSection = (): JSX.Element => {
                 <div className="flex flex-col w-[204px] items-center absolute top-28 left-0">
                   <p className="font-normal text-wwwfigmacomriver-bed text-[13.6px] text-center leading-[22.8px]">
                     {option.description.map((line, i) => (
-                      <React.Fragment key={i}>
+                      <span key={i}>
                         {line}
                         {i < option.description.length - 1 && <br />}
-                      </React.Fragment>
+                      </span>
                     ))}
                   </p>
                 </div>
