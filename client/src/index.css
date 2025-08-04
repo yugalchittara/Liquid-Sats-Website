@@ -58,7 +58,7 @@
   --www-figma-com-semantic-link-line-height: 21px;
   --wwwfigmacomathens-gray: rgba(255, 247, 237, 1);
   --wwwfigmacomblack-10: rgba(0, 0, 0, 0.1);
-  --wwwfigmacomblue-ribbon: rgba(21, 93, 252, 1);
+  --wwwfigmacomblue-ribbon: rgba(245, 127, 23, 1);
   --wwwfigmacomcod-gray: rgba(10, 10, 10, 1);
   --wwwfigmacomebony: rgba(16, 24, 40, 1);
   --wwwfigmacomfeta: rgba(239, 246, 255, 1);
@@ -73,6 +73,10 @@
   --wwwfigmacomvermilion: rgba(245, 73, 0, 1);
   --wwwfigmacomwhite: rgba(255, 255, 255, 1);
   --wwwfigmacomzumthor: rgba(239, 246, 255, 1);
+  --wwwfigmacomorange-primary: rgba(245, 127, 23, 1);
+  --wwwfigmacomorange-light: rgba(255, 237, 213, 1);
+  --wwwfigmacomorange-gradient-start: rgba(245, 127, 23, 1);
+  --wwwfigmacomorange-gradient-end: rgba(251, 146, 60, 1);
 }
 
 @tailwind base;

@@ -22,7 +22,7 @@ export const HeroSection = (): JSX.Element => {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
-              className="bg-wwwfigmacomblue-ribbon hover:bg-wwwfigmacomblue-ribbon/90 text-white px-6 py-3 rounded-lg font-medium"
+              className="bg-gradient-to-r from-wwwfigmacomorange-gradient-start to-wwwfigmacomorange-gradient-end hover:from-wwwfigmacomorange-primary hover:to-wwwfigmacomorange-gradient-end text-white px-6 py-3 rounded-lg font-medium"
               data-testid="button-go-to-app"
             >
               Go to App

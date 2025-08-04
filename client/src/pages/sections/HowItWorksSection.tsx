@@ -37,7 +37,7 @@ export const HowItWorksSection = (): JSX.Element => {
         <div className="flex flex-col items-center gap-3.5 relative self-stretch w-full">
           <div className="flex flex-col items-center relative self-stretch w-full">
             <h2 className="font-bold text-wwwfigmacomebony text-[29.8px] text-center leading-[35px]">
-              How It Works
+              How <span className="text-wwwfigmacomorange-primary">It Works</span>
             </h2>
           </div>
 
@@ -53,20 +53,21 @@ export const HowItWorksSection = (): JSX.Element => {
           {steps.map((step, index) => (
             <Card
               key={index}
-              className="border border-solid bg-wwwfigmacomwhite rounded-[12.75px]"
+              className="relative border border-solid bg-wwwfigmacomwhite rounded-[12.75px] overflow-hidden"
               data-testid={`card-step-${index}`}
             >
-              <CardContent className="p-[22px] text-center">
-                <div className="flex flex-col items-center gap-4">
-                  <div className="flex w-[42px] h-[42px] items-center justify-center bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
-                    <div className="font-bold text-wwwfigmacomwhite text-sm">
-                      {step.number}
-                    </div>
-                  </div>
+              {/* Corner step number */}
+              <div className="absolute top-4 left-4 flex w-8 h-8 items-center justify-center bg-wwwfigmacomorange-primary rounded-full">
+                <div className="font-bold text-wwwfigmacomwhite text-xs">
+                  {step.number}
+                </div>
+              </div>
 
-                  <div className="flex w-[42px] h-[42px] items-center justify-center bg-wwwfigmacomzumthor rounded-[8.75px]">
+              <CardContent className="p-[22px] pt-16 text-center">
+                <div className="flex flex-col items-center gap-4">
+                  <div className="flex w-16 h-16 items-center justify-center bg-wwwfigmacomorange-light rounded-full">
                     <img
-                      className="w-[21px] h-[21px]"
+                      className="w-8 h-8"
                       alt={`Step ${step.number} icon`}
                       src={step.icon}
                       data-testid={`img-step-icon-${index}`}
@@ -74,14 +75,14 @@ export const HowItWorksSection = (): JSX.Element => {
                   </div>
 
                   <h3 
-                    className="font-bold text-wwwfigmacomebony text-sm leading-[21px]"
+                    className="font-bold text-wwwfigmacomebony text-base leading-[24px]"
                     data-testid={`text-step-title-${index}`}
                   >
                     {step.title}
                   </h3>
 
                   <p 
-                    className="font-normal text-wwwfigmacomriver-bed text-[13.6px] leading-[22.8px]"
+                    className="font-normal text-wwwfigmacomriver-bed text-sm leading-[20px]"
                     data-testid={`text-step-description-${index}`}
                   >
                     {step.description}
