@@ -14,7 +14,7 @@ export const HeroSection = (): JSX.Element => {
                 Stay Bitcoin-True.
               </span>
             </h1>
-            
+
             <p className="font-normal text-wwwfigmacomriver-bed text-base sm:text-lg leading-relaxed max-w-[480px]">
               Use your BTC without selling. Maintain self-custody while accessing on-chain liquidity.
             </p>
@@ -38,8 +38,10 @@ export const HeroSection = (): JSX.Element => {
         </div>
 
         {/* Right content - Collateral Card */}
-        <div className="flex-shrink-0">
-          <div className="w-[320px] bg-white rounded-[16px] p-6 shadow-lg border border-gray-100">
+        <div className="flex-shrink-0 relative">
+          {/* Gradient backdrop */}
+          <div className="absolute -inset-4 bg-gradient-to-br from-orange-100/40 via-orange-50/20 to-transparent rounded-[24px] blur-xl"></div>
+          <div className="w-[320px] bg-white rounded-[16px] p-6 shadow-2xl border border-gray-100 relative z-10 backdrop-blur-sm">
             {/* Bitcoin Collateral Header */}
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-wwwfigmacomorange-primary rounded-full flex items-center justify-center">
@@ -63,12 +65,12 @@ export const HeroSection = (): JSX.Element => {
                 <span className="text-gray-600 text-sm">Available to Borrow</span>
                 <span className="font-bold text-gray-900 text-lg">$62,500</span>
               </div>
-              
+
               <div className="flex justify-between items-center">
                 <span className="text-gray-600 text-sm">LTV Ratio</span>
                 <span className="font-semibold text-gray-900">50%</span>
               </div>
-              
+
               <div className="flex justify-between items-center">
                 <span className="text-gray-600 text-sm">APR</span>
                 <span className="font-semibold text-green-600">9.5%</span>
