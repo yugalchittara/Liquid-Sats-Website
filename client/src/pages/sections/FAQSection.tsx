@@ -33,7 +33,7 @@ export const FAQSection = (): JSX.Element => {
 
   return (
     <section className="py-[70px] bg-[#f8fafb] flex justify-center w-full">
-      <div className="flex flex-col max-w-[784px] items-center gap-14 px-6 w-full">
+      <div className="flex flex-col max-w-[784px] items-center gap-14 px-4 sm:px-6 w-full">
         <div className="flex flex-col items-center gap-3.5 w-full">
           <h2 className="font-bold text-wwwfigmacomebony text-[29.8px] text-center leading-[35px]">
             Frequently Asked Questions

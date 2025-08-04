@@ -23,47 +23,40 @@ export const HeaderSection = (): JSX.Element => {
   ];
 
   return (
-    <header className="w-full flex flex-col items-start pt-3.5 pb-[15px] px-6 md:px-12 lg:px-[196px] bg-wwwfigmacomwhite border-b">
-      <div className="flex items-center justify-between w-full">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full bg-wwwfigmacomwhite border-b shadow-sm">
+      <div className="flex items-center justify-between w-full px-4 sm:px-6 md:px-12 lg:px-24 py-3">
         {/* Logo section */}
-        <div className="flex items-center">
-          <div className="flex flex-col w-[35px] h-7 items-start pr-[7px]">
-            <div className="flex w-7 h-7 items-center justify-center bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
-              <div className="font-bold text-wwwfigmacomwhite text-sm">L</div>
-            </div>
+        <div className="flex items-center gap-2">
+          <div className="flex w-7 h-7 items-center justify-center bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
+            <div className="font-bold text-wwwfigmacomwhite text-sm">L</div>
           </div>
-
-          <div>
-            <div className="font-www-figma-com-inter-bold font-[number:var(--www-figma-com-inter-bold-font-weight)] text-wwwfigmacomebony text-[length:var(--www-figma-com-inter-bold-font-size)] tracking-[var(--www-figma-com-inter-bold-letter-spacing)] leading-[var(--www-figma-com-inter-bold-line-height)] whitespace-nowrap [font-style:var(--www-figma-com-inter-bold-font-style)]">
-              LiquidSat
-            </div>
+          <div className="font-bold text-wwwfigmacomebony text-base">
+            LiquidSat
           </div>
         </div>
 
-        {/* Navigation links */}
-        <nav className="hidden md:flex items-center">
+        {/* Navigation links - hidden on mobile */}
+        <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link, index) => (
-            <div
+            <a
               key={index}
-              className="inline-flex flex-col items-start pl-0 pr-7 py-0"
+              className="font-normal text-wwwfigmacomriver-bed text-sm hover:text-wwwfigmacomblue-ribbon transition-colors"
+              href={link.href}
+              rel="noopener noreferrer"
+              target="_blank"
+              data-testid={`nav-link-${index}`}
             >
-              <a
-                className="[font-family:'Inter',Helvetica] font-normal text-wwwfigmacomriver-bed text-sm tracking-[0] leading-[21px] whitespace-nowrap"
-                href={link.href}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {link.text}
-              </a>
-            </div>
+              {link.text}
+            </a>
           ))}
         </nav>
 
         {/* CTA Button */}
-        <Button className="h-[31.5px] px-3.5 py-[7px] bg-wwwfigmacomblue-ribbon rounded-[6.75px]">
-          <span className="mt-[-1.25px] font-www-figma-com-semantic-button font-[number:var(--www-figma-com-semantic-button-font-weight)] text-wwwfigmacomwhite text-[length:var(--www-figma-com-semantic-button-font-size)] text-center tracking-[var(--www-figma-com-semantic-button-letter-spacing)] leading-[var(--www-figma-com-semantic-button-line-height)] whitespace-nowrap [font-style:var(--www-figma-com-semantic-button-font-style)]">
-            Go to App
-          </span>
+        <Button 
+          className="h-8 px-4 py-2 bg-wwwfigmacomblue-ribbon hover:bg-blue-700 rounded-[6.75px] text-sm font-medium"
+          data-testid="button-go-to-app"
+        >
+          Go to App
         </Button>
       </div>
     </header>

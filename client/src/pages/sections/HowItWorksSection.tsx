@@ -36,17 +36,15 @@ export const HowItWorksSection = (): JSX.Element => {
       <div className="flex flex-col max-w-[1120px] items-center gap-14 w-full">
         <div className="flex flex-col items-center gap-3.5 relative self-stretch w-full">
           <div className="flex flex-col items-center relative self-stretch w-full">
-            <h2 className="relative self-stretch mt-[-1.00px] font-www-figma-com-semantic-heading-2 font-[number:var(--www-figma-com-semantic-heading-2-font-weight)] text-wwwfigmacomebony text-[length:var(--www-figma-com-semantic-heading-2-font-size)] text-center tracking-[var(--www-figma-com-semantic-heading-2-letter-spacing)] leading-[var(--www-figma-com-semantic-heading-2-line-height)] [font-style:var(--www-figma-com-semantic-heading-2-font-style)]">
+            <h2 className="font-bold text-wwwfigmacomebony text-[29.8px] text-center leading-[35px]">
               How It Works
             </h2>
           </div>
 
-          <div className="flex flex-col max-w-[588px] w-[588px] items-center relative">
-            <p className="relative w-fit mt-[-1.00px] font-normal text-wwwfigmacomriver-bed text-[16.4px] text-center tracking-[0] leading-[24.5px] [font-family:'Inter',Helvetica]">
+          <div className="max-w-[588px] w-full">
+            <p className="font-normal text-wwwfigmacomriver-bed text-[16.4px] text-center leading-[24.5px]">
               Get liquidity from your Bitcoin in four simple steps while
-              maintaining
-              <br />
-              complete control of your assets.
+              maintaining complete control of your assets.
             </p>
           </div>
         </div>

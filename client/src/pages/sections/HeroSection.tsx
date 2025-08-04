@@ -3,19 +3,19 @@ import { Button } from "@/components/ui/button";
 
 export const HeroSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center py-[100px] px-6 md:px-[175px] w-full bg-wwwfigmacomwhite">
-      <div className="flex flex-col lg:flex-row max-w-[1120px] items-center justify-between gap-12 w-full">
+    <section className="flex flex-col items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24 w-full bg-wwwfigmacomwhite">
+      <div className="flex flex-col lg:flex-row max-w-7xl items-center justify-between gap-8 lg:gap-12 w-full">
         {/* Left content */}
         <div className="flex flex-col items-start gap-8 flex-1">
           <div className="flex flex-col gap-6">
-            <h1 className="font-bold text-wwwfigmacomebony text-[48px] md:text-[56px] leading-[56px] md:leading-[64px]">
+            <h1 className="font-bold text-wwwfigmacomebony text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight">
               Unlock Capital.{" "}
               <span className="text-wwwfigmacomblue-ribbon">
                 Stay Bitcoin-True.
               </span>
             </h1>
             
-            <p className="font-normal text-wwwfigmacomriver-bed text-lg leading-[28px] max-w-[480px]">
+            <p className="font-normal text-wwwfigmacomriver-bed text-base sm:text-lg leading-relaxed max-w-[480px]">
               Use your BTC without selling. Maintain self-custody while accessing on-chain liquidity.
             </p>
           </div>
@@ -39,7 +39,7 @@ export const HeroSection = (): JSX.Element => {
 
         {/* Right content - Bitcoin icon */}
         <div className="flex-shrink-0">
-          <div className="w-[280px] h-[280px] bg-wwwfigmacomblue-ribbon rounded-[24px] flex items-center justify-center">
+          <div className="w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] lg:w-[320px] lg:h-[320px] bg-wwwfigmacomblue-ribbon rounded-[24px] flex items-center justify-center">
             <svg 
               width="140" 
               height="140" 

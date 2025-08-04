@@ -28,17 +28,15 @@ export const MainContentSection = (): JSX.Element => {
       <div className="flex flex-col max-w-[1120px] items-center gap-14 w-full">
         <div className="flex flex-col items-center gap-3.5 relative self-stretch w-full">
           <div className="flex flex-col items-center relative self-stretch w-full">
-            <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Inter',Helvetica] font-bold text-wwwfigmacomebony text-[29.8px] text-center tracking-[0] leading-[35px]">
+            <h2 className="font-bold text-wwwfigmacomebony text-[29.8px] text-center leading-[35px]">
               Built for Trust &amp; Security
             </h2>
           </div>
 
-          <div className="flex flex-col max-w-[588px] w-[588px] items-center relative">
-            <p className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-wwwfigmacomriver-bed text-[16.4px] text-center tracking-[0] leading-[24.5px]">
+          <div className="max-w-[588px] w-full">
+            <p className="font-normal text-wwwfigmacomriver-bed text-[16.4px] text-center leading-[24.5px]">
               Your Bitcoin security is our priority. Every aspect is designed
-              with maximum
-              <br />
-              safety and transparency.
+              with maximum safety and transparency.
             </p>
           </div>
         </div>

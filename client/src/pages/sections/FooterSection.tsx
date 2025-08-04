@@ -38,41 +38,43 @@ export const FooterSection = (): JSX.Element => {
   ];
 
   return (
-    <footer className="w-full bg-wwwfigmacomebony py-14 px-6 md:px-[175px]">
-      <div className="flex flex-col items-start gap-[42px] w-full max-w-[1120px] mx-auto px-[21px]">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-[42px] w-full">
+    <footer className="w-full bg-wwwfigmacomebony py-12 sm:py-14 px-4 sm:px-6 md:px-12 lg:px-24">
+      <div className="flex flex-col items-center gap-8 sm:gap-10 w-full max-w-[1120px] mx-auto">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 w-full">
           {/* Logo and tagline */}
-          <div className="flex flex-col items-start gap-3.5 flex-1">
-            <div className="flex items-center">
-              <div className="w-[35px] h-7 mr-1">
-                <div className="flex items-center justify-center w-7 h-7 bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
-                  <span className="font-www-figma-com-inter-bold font-bold text-wwwfigmacomwhite text-sm">
-                    L
-                  </span>
-                </div>
+          <div className="flex flex-col items-start gap-4 flex-1">
+            <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center w-7 h-7 bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
+                <span className="font-bold text-wwwfigmacomwhite text-sm">
+                  L
+                </span>
               </div>
-              <span className="font-www-figma-com-inter-bold font-bold text-wwwfigmacomwhite text-[17.08984375px]">
+              <span className="font-bold text-wwwfigmacomwhite text-base">
                 LiquidSat
               </span>
             </div>
-            <div className="max-w-[392px]">
-              <p className="font-normal text-wwwfigmacommischka text-[13.7px] leading-[22.8px]">
+            <div className="max-w-md">
+              <p className="font-normal text-wwwfigmacommischka text-sm leading-relaxed">
                 Bitcoin-backed capital access. No custody. No compromise.
               </p>
             </div>
           </div>
 
           {/* Button and links */}
-          <div className="flex flex-col items-start md:items-end gap-7 flex-1">
-            <Button className="h-[31.5px] px-7 py-[10.5px] bg-wwwfigmacomblue-ribbon rounded-[6.75px] text-wwwfigmacomwhite text-[12.3px] font-medium">
+          <div className="flex flex-col items-start lg:items-end gap-6 flex-1">
+            <Button 
+              className="h-8 px-6 py-2 bg-wwwfigmacomblue-ribbon hover:bg-blue-700 rounded-[6.75px] text-wwwfigmacomwhite text-sm font-medium"
+              data-testid="button-footer-go-to-app"
+            >
               Go to App
             </Button>
 
-            <div className="flex flex-wrap items-start justify-end gap-[21px]">
+            <div className="flex flex-wrap items-start justify-start lg:justify-end gap-4 sm:gap-6">
               {footerLinks.map((link, index) => (
                 <a
                   key={`footer-link-${index}`}
                   href={link.url}
+                  data-testid={`link-footer-${index}`}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="flex items-center text-wwwfigmacommischka text-[12.3px] leading-[17.5px] hover:underline"

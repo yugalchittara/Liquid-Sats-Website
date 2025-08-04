@@ -42,7 +42,7 @@ export const LoanCalculatorSection = (): JSX.Element => {
 
         <Card className="w-full max-w-[1008px] border border-solid shadow-sm bg-wwwfigmacomwhite rounded-[12.75px]">
           <CardContent className="pt-7 pb-[50px] px-7">
-            <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-10">
+            <div className="flex flex-col xl:flex-row items-start xl:items-end justify-between gap-8 xl:gap-10">
               <div className="flex flex-col items-start gap-5 flex-1 w-full">
                 <div className="flex flex-col items-start gap-2.5 w-full">
                   <label className="font-medium text-wwwfigmacomcod-gray text-sm">
@@ -81,7 +81,7 @@ export const LoanCalculatorSection = (): JSX.Element => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-x-6 gap-y-5 flex-1">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5 flex-1 w-full">
                 {calculatorResults.slice(0, 4).map((item, index) => (
                   <div key={index} className="flex flex-col h-[52px]" data-testid={`result-${index}`}>
                     <div className="font-bold text-wwwfigmacomebony text-[26px] leading-[31.5px]">
@@ -92,7 +92,7 @@ export const LoanCalculatorSection = (): JSX.Element => {
                     </div>
                   </div>
                 ))}
-                <div className="flex flex-col h-[52px] col-span-2" data-testid="result-payment">
+                <div className="flex flex-col h-[52px] col-span-full sm:col-span-2" data-testid="result-payment">
                   <div className="font-bold text-wwwfigmacomebony text-[25.7px] leading-[31.5px]">
                     {calculatorResults[4].value}
                   </div>

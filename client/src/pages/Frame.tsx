@@ -12,12 +12,12 @@ import { MainContentSection } from "./sections/MainContentSection";
 export const Frame = (): JSX.Element => {
   return (
     <div className="bg-transparent flex flex-col items-center w-full min-h-screen">
-      <div className="w-full max-w-[1470px]">
+      <div className="w-full">
         {/* Header is fixed at the top */}
         <HeaderSection />
 
         {/* Main content sections stacked vertically */}
-        <div className="w-full mt-[60px]">
+        <div className="w-full pt-16">
           <HeroSection />
           <MainContentSection />
           <HowItWorksSection />
