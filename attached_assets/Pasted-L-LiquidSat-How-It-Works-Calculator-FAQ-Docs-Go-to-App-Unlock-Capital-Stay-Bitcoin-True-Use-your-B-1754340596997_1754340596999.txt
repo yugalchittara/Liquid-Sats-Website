@@ -1,0 +1,111 @@
+L
+LiquidSat
+How It Works
+Calculator
+FAQ
+Docs
+Go to App
+Unlock Capital. Stay
+Bitcoin-True.
+Use your BTC without selling. Maintain self-custody while accessing on-chain liquidity.
+Go to App
+How It Works
+Why Choose LiquidSat
+Experience the freedom of Bitcoin-backed lending with industry-leading
+terms and complete transparency.
+50% Initial Max LTV
+Starting at 9.5% APR
+Lower your risk at any time with customizable collateral ratios.
+Tiered rates based on loan size and duration.
+Borrow any amount on Your Terms
+Transparent Pricing
+As low as $1000. Configure duration, and raise loan request.
+0% origination or early repayment fees. Only pay interest.
+Built for Trust & Security
+Your Bitcoin security is our priority. Every aspect is designed with maximum
+safety and transparency.
+Security First
+Built-in Failsafes
+Bitcoin-Native Infra
+Funds move only after approvals and BTC
+lock. Smart contracts are audited.
+Cancel or reclaim funds if loan steps aren't
+completed.
+No wrapped assets or bridges. BTC locked
+natively using script-based escrow.
+How It Works
+Get liquidity from your Bitcoin in four simple steps while maintaining
+complete control of your assets.
+01
+02
+03
+04
+Post a Loan Request
+Receive Lender Offers
+Lock BTC, Trigger Loan
+Manage the Loan
+Choose your BTC collateral and
+desired loan amount.
+Lenders approve and sign
+offers. You select one.
+BTC is script-locked, and USDT
+is transferred.
+Pay interest, redeem, or reclaim
+funds on fallback.
+Try Our Loan Calculator
+Enter your loan info and see your LiquidSat loan terms
+How much do you want to borrow?
+10.5%
+$0.00
+$
+2000
+Annual Interest Rate
+Origination Fee
+Choose your term length
+$4,000
+50%
+1 Month
+Collateral Value
+LTV Ratio
+$2,017.5
+Payment at Maturity
+What You Can Do With Your Liquidity
+Unlock the potential of your Bitcoin without losing exposure to future price
+appreciation.
+Reinvest in BTC
+Fund Your Business
+Cover Life Expenses
+Pay for Education
+Use liquidity to buy more
+Bitcoin and amplify your
+position while keeping your
+original holdings.
+Access working capital for your
+business without liquidating
+your Bitcoin investments.
+Handle unexpected expenses
+or major purchases while
+keeping your Bitcoin for the
+long term.
+Invest in yourself or your
+family's education without
+sacrificing your Bitcoin
+holdings.
+Frequently Asked Questions
+Get answers to common questions about Bitcoin-backed lending with LiquidSat.
+How do I lock my BTC?
+What happens if I cancel a loan?
+Can I repay early?
+Is this self-custodial?
+What happens if I default?
+L
+LiquidSat
+Go to App
+Bitcoin-backed capital access. No custody. No compromise.
+Docs
+GitHub
+FAQ
+Discord
+X
+Privacy Policy
+© 2024 LiquidSat. All rights reserved.
