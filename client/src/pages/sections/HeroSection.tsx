@@ -37,22 +37,48 @@ export const HeroSection = (): JSX.Element => {
           </div>
         </div>
 
-        {/* Right content - Bitcoin icon */}
+        {/* Right content - Collateral Card */}
         <div className="flex-shrink-0">
-          <div className="w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] lg:w-[320px] lg:h-[320px] bg-wwwfigmacomblue-ribbon rounded-[24px] flex items-center justify-center">
-            <svg 
-              width="140" 
-              height="140" 
-              viewBox="0 0 140 140" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-white"
-            >
-              <path 
-                d="M95.2 58.8C96.6 49.7 90.3 44.8 81.4 42.1L84.4 30.8L77.9 29.2L75 40.2C73.4 39.8 71.7 39.4 70.1 39L73 28L66.5 26.4L63.5 37.7C62.2 37.4 60.9 37.1 59.7 36.8L59.7 36.7L50.8 34.4L49.1 41.4C49.1 41.4 53.8 42.5 53.7 42.6C56.3 43.2 56.8 45 56.7 46.4L53.3 59.2C53.5 59.3 53.8 59.4 54.1 59.6L53.3 59.4L48.6 78.3C48.2 79.3 47.2 80.8 45.1 80.3C45.2 80.4 40.5 79.2 40.5 79.2L37.3 86.8L45.7 89L52.2 90.6L49.1 102.1L55.6 103.7L58.6 92.4C60.3 92.9 61.9 93.3 63.5 93.7L60.5 105L67 106.6L70.1 95.1C81.5 97.3 89.9 96.5 93.4 86.5C96.2 78.4 93.2 73.7 87.1 70.8C91.6 69.8 94.9 67 95.2 58.8ZM82.1 81.9C80.1 90.4 66.5 85.9 61.9 84.7L66.1 68.2C70.7 69.4 84.2 72.8 82.1 81.9ZM84.1 58.6C82.3 66.3 71.4 62.6 67.6 61.6L71.4 46.6C75.2 47.6 86 50.4 84.1 58.6Z" 
-                fill="currentColor"
-              />
-            </svg>
+          <div className="w-[320px] bg-white rounded-[16px] p-6 shadow-lg border border-gray-100">
+            {/* Bitcoin Collateral Header */}
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 bg-wwwfigmacomorange-primary rounded-full flex items-center justify-center">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white">
+                  <path d="M13.6 8.4C13.8 7.1 12.9 6.4 11.6 6L12.2 4.4L11.1 4.1L10.7 5.7C10.5 5.7 10.2 5.6 10 5.6L10.4 4L9.4 3.8L8.9 5.4C8.7 5.4 8.6 5.3 8.5 5.3L8.5 5.2L7.3 4.9L7 6C7 6 7.7 6.2 7.7 6.2C8 6.3 8.1 6.4 8.1 6.6L7.6 8.5C7.6 8.5 7.7 8.5 7.7 8.5L7.6 8.5L6.9 11.2C6.9 11.3 6.7 11.5 6.4 11.5C6.4 11.5 5.8 11.3 5.8 11.3L5.3 12.4L6.5 12.7L7.5 12.9L6.9 14.6L8 14.8L8.4 13.2C8.6 13.3 8.8 13.3 9.1 13.4L8.7 15L9.7 15.2L10 13.6C11.6 13.9 12.8 13.8 13.3 12.4C13.7 11.2 13.3 10.5 12.4 10.1C13 9.9 13.5 9.6 13.6 8.4ZM11.7 11.7C11.4 12.9 9.5 12.3 8.8 12.1L9.4 9.7C10.1 9.9 12 10.5 11.7 11.7ZM12 8.4C11.8 9.5 10.2 8.9 9.7 8.8L10.2 6.7C10.7 6.8 12.2 7.2 12 8.4Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 text-sm">Bitcoin Collateral</h3>
+                <p className="text-gray-500 text-xs">Self-Custody</p>
+              </div>
+              <div className="ml-auto text-right">
+                <div className="font-bold text-gray-900 text-lg">2.5 BTC</div>
+                <div className="text-green-600 text-sm font-medium">+$125,000</div>
+              </div>
+            </div>
+
+            {/* Stats Row */}
+            <div className="space-y-4 mb-6">
+              <div className="flex justify-between items-center">
+                <span className="text-gray-600 text-sm">Available to Borrow</span>
+                <span className="font-bold text-gray-900 text-lg">$62,500</span>
+              </div>
+              
+              <div className="flex justify-between items-center">
+                <span className="text-gray-600 text-sm">LTV Ratio</span>
+                <span className="font-semibold text-gray-900">50%</span>
+              </div>
+              
+              <div className="flex justify-between items-center">
+                <span className="text-gray-600 text-sm">APR</span>
+                <span className="font-semibold text-green-600">9.5%</span>
+              </div>
+            </div>
+
+            {/* Access Liquidity Button */}
+            <button className="w-full bg-gradient-to-r from-wwwfigmacomorange-gradient-start to-wwwfigmacomorange-gradient-end hover:from-wwwfigmacomorange-primary hover:to-wwwfigmacomorange-gradient-end text-white py-3 px-6 rounded-lg font-medium transition-all duration-200">
+              Access Liquidity
+            </button>
           </div>
         </div>
       </div>
