@@ -28,6 +28,7 @@ module.exports = {
         "wwwfigmacomorange-light": "var(--wwwfigmacomorange-light)",
         "wwwfigmacomorange-gradient-start": "var(--wwwfigmacomorange-gradient-start)",
         "wwwfigmacomorange-gradient-end": "var(--wwwfigmacomorange-gradient-end)",
+        'orange-25': '#FEF7ED',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

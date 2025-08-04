@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const HeroSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24 w-full bg-wwwfigmacomwhite">
+    <section className="flex flex-col items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24 w-full bg-gradient-to-br from-orange-25/30 via-wwwfigmacomwhite to-wwwfigmacomwhite">
       <div className="flex flex-col lg:flex-row max-w-7xl items-center justify-between gap-8 lg:gap-12 w-full">
         {/* Left content */}
         <div className="flex flex-col items-start gap-8 flex-1">
@@ -39,8 +39,9 @@ export const HeroSection = (): JSX.Element => {
 
         {/* Right content - Collateral Card */}
         <div className="flex-shrink-0 relative">
-          {/* Gradient backdrop */}
-          <div className="absolute -inset-4 bg-gradient-to-br from-orange-100/40 via-orange-50/20 to-transparent rounded-[24px] blur-xl"></div>
+          {/* Enhanced gradient backdrop covering entire right area */}
+          <div className="absolute -inset-8 bg-gradient-to-br from-orange-200/30 via-orange-100/25 via-orange-50/15 to-transparent rounded-[32px] blur-2xl"></div>
+          <div className="absolute -inset-6 bg-gradient-to-br from-orange-100/40 via-orange-50/20 to-transparent rounded-[24px] blur-xl"></div>
           <div className="w-[320px] bg-white rounded-[16px] p-6 shadow-2xl border border-gray-100 relative z-10 backdrop-blur-sm">
             {/* Bitcoin Collateral Header */}
             <div className="flex items-center gap-3 mb-6">
