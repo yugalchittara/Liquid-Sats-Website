@@ -5,21 +5,21 @@ export const MainContentSection = (): JSX.Element => {
   // Data for security feature cards
   const securityFeatures = [
     {
+      icon: "/figmaAssets/component-1-6.svg",
+      title: "Bitcoin-Native Infra",
+      description:
+        "No wrapped assets or bridges. BTC locked natively using script-based escrow.",
+    },
+    {
       icon: "/figmaAssets/component-1-2.svg",
       title: "Security First",
       description:
-        "Funds move only after approvals and BTC lock. Smart contracts are audited.",
+        "Funds move only after approvals and BTC lock.",
     },
     {
       icon: "/figmaAssets/component-1-13.svg",
       title: "Built-in Failsafes",
       description: "Cancel or reclaim funds if loan steps aren't completed.",
-    },
-    {
-      icon: "/figmaAssets/component-1-6.svg",
-      title: "Bitcoin-Native Infra",
-      description:
-        "No wrapped assets or bridges. BTC locked natively using script-based escrow.",
     },
   ];
 
