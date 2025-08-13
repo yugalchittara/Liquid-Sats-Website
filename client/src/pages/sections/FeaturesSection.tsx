@@ -9,16 +9,16 @@ export const FeaturesSection = (): JSX.Element => {
       description: "Lower your risk at any time with customizable collateral ratios.",
     },
     {
-      title: "Starting at 9.5% APR", 
+      title: "Starting at 5% APR", 
       description: "Tiered rates based on loan size and duration.",
     },
     {
-      title: "Borrow any amount on Your Terms",
+      title: "Borrow at your terms",
       description: "As low as $1000. Configure duration, and raise loan request.",
     },
     {
       title: "Transparent Pricing",
-      description: "0% origination or early repayment fees. Only pay interest.",
+      description: "No hidden fees, just transparent protocol fee.",
     },
   ];
 
