@@ -49,20 +49,16 @@ export const HowItWorksSection = (): JSX.Element => {
   ];
 
   return (
-    <section id="how-it-works" className="flex flex-col items-center py-[70px] px-6 md:px-[175px] w-full bg-wwwfigmacomwhite">
-      <div className="flex flex-col max-w-[1120px] items-center gap-14 w-full">
-        <div className="flex flex-col items-center gap-3.5 relative self-stretch w-full">
-          <div className="flex flex-col items-center relative self-stretch w-full">
-            <h2 className="font-bold text-wwwfigmacomebony text-[29.8px] text-center leading-[35px]">
-              How <span className="text-wwwfigmacomorange-primary">It Works</span>
-            </h2>
-          </div>
-
-          <div className="max-w-[588px] w-full">
-            <p className="font-normal text-wwwfigmacomriver-bed text-[16.4px] text-center leading-[24.5px]">
-              Get liquidity from your Bitcoin in four simple steps
-            </p>
-          </div>
+    <section id="how-it-works" className="flex flex-col items-center py-16 px-6 md:px-24 w-full bg-wwwfigmacomwhite">
+      <div className="flex flex-col max-w-6xl items-center gap-10 w-full">
+        <div className="flex flex-col items-center gap-3 w-full">
+          <h2 className="font-bold text-wwwfigmacomebony text-3xl text-center">
+            How <span className="text-wwwfigmacomorange-primary">It Works</span>
+          </h2>
+          
+          <p className="max-w-xl font-normal text-wwwfigmacomriver-bed text-base text-center leading-relaxed">
+            Get liquidity from your Bitcoin in four simple steps
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 w-full relative">
@@ -106,8 +102,11 @@ export const HowItWorksSection = (): JSX.Element => {
         </div>
 
         {/* Start Now button */}
-        <div className="mt-8">
-          <Button className="bg-wwwfigmacomorange-primary hover:bg-wwwfigmacomorange-primary/90 text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2">
+        <div className="mt-4">
+          <Button 
+            className="bg-wwwfigmacomorange-primary hover:bg-wwwfigmacomorange-primary/90 text-white px-6 py-2.5 rounded-lg font-medium flex items-center gap-2"
+            onClick={() => window.open("https://liquidsat.danlabs.xyz/", "_blank")}
+          >
             Start Now
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor"/>
