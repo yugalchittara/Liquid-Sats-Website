@@ -65,7 +65,7 @@ export const HowItWorksSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 w-full relative">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               <Card className="border border-solid bg-wwwfigmacomwhite rounded-[12.75px] h-full">
@@ -94,7 +94,7 @@ export const HowItWorksSection = (): JSX.Element => {
 
               {/* Arrow connector for desktop - positioned between cards */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute -right-3 top-1/2 transform -translate-y-1/2 z-10">
+                <div className="hidden xl:block absolute -right-3 top-1/2 transform -translate-y-1/2 z-10">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="#F57F17"/>
                   </svg>
