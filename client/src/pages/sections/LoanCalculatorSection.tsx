@@ -34,7 +34,7 @@ export const LoanCalculatorSection = (): JSX.Element => {
   const summary = calculateSummary();
 
   return (
-    <section className="px-6 py-[70px] bg-[#f8fafb] flex flex-col items-center w-full md:px-[175px]">
+    <section id="calculator" className="px-6 py-[70px] bg-[#f8fafb] flex flex-col items-center w-full md:px-[175px]">
       <div className="flex flex-col items-center gap-14 w-full max-w-[1120px]">
         <header className="flex flex-col items-center gap-3.5 w-full">
           <h2 className="font-bold text-wwwfigmacomebony text-[29.8px] text-center leading-[35px]">

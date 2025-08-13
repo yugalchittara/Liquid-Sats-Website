@@ -6,18 +6,8 @@ export const FooterSection = (): JSX.Element => {
   // Footer links data
   const footerLinks = [
     {
-      name: "Docs",
-      url: "https://efb4b355-c372-41bc-b2af-2f030738d0c5-figmaiframepreview.figma.site/preview_page.html",
-      icon: null,
-    },
-    {
-      name: "GitHub",
-      url: "https://efb4b355-c372-41bc-b2af-2f030738d0c5-figmaiframepreview.figma.site/preview_page.html",
-      icon: <GithubIcon className="w-3.5 h-3.5" />,
-    },
-    {
       name: "FAQ",
-      url: "https://efb4b355-c372-41bc-b2af-2f030738d0c5-figmaiframepreview.figma.site/preview_page.html#faq",
+      url: "#faq",
       icon: null,
     },
     {
@@ -65,6 +55,7 @@ export const FooterSection = (): JSX.Element => {
             <Button 
               className="h-8 px-6 py-2 bg-wwwfigmacomblue-ribbon hover:bg-blue-700 rounded-[6.75px] text-wwwfigmacomwhite text-sm font-medium"
               data-testid="button-footer-go-to-app"
+              onClick={() => window.open("https://liquidsat.danlabs.xyz/", "_blank")}
             >
               Go to App
             </Button>
@@ -75,8 +66,6 @@ export const FooterSection = (): JSX.Element => {
                   key={`footer-link-${index}`}
                   href={link.url}
                   data-testid={`link-footer-${index}`}
-                  rel="noopener noreferrer"
-                  target="_blank"
                   className="flex items-center text-wwwfigmacommischka text-[12.3px] leading-[17.5px] hover:underline"
                 >
                   {link.icon && <span className="mr-[3.5px]">{link.icon}</span>}

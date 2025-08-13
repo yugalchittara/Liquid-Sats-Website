@@ -24,6 +24,7 @@ export const HeroSection = (): JSX.Element => {
             <Button 
               className="bg-gradient-to-r from-wwwfigmacomorange-gradient-start to-wwwfigmacomorange-gradient-end hover:from-wwwfigmacomorange-primary hover:to-wwwfigmacomorange-gradient-end text-white px-6 py-3 rounded-lg font-medium"
               data-testid="button-go-to-app"
+              onClick={() => window.open("https://liquidsat.danlabs.xyz/", "_blank")}
             >
               Go to App
             </Button>
@@ -31,6 +32,7 @@ export const HeroSection = (): JSX.Element => {
               variant="outline" 
               className="border-wwwfigmacomriver-bed text-wwwfigmacomriver-bed hover:bg-wwwfigmacomriver-bed/10 px-6 py-3 rounded-lg font-medium"
               data-testid="button-how-it-works"
+              onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
             >
               How It Works
             </Button>
@@ -79,7 +81,10 @@ export const HeroSection = (): JSX.Element => {
             </div>
 
             {/* Access Liquidity Button */}
-            <button className="w-full bg-gradient-to-r from-wwwfigmacomorange-gradient-start to-wwwfigmacomorange-gradient-end hover:from-wwwfigmacomorange-primary hover:to-wwwfigmacomorange-gradient-end text-white py-3 px-6 rounded-lg font-medium transition-all duration-200">
+            <button 
+              className="w-full bg-gradient-to-r from-wwwfigmacomorange-gradient-start to-wwwfigmacomorange-gradient-end hover:from-wwwfigmacomorange-primary hover:to-wwwfigmacomorange-gradient-end text-white py-3 px-6 rounded-lg font-medium transition-all duration-200"
+              onClick={() => window.open("https://liquidsat.danlabs.xyz/", "_blank")}
+            >
               Access Liquidity
             </button>
           </div>

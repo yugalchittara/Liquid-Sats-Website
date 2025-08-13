@@ -49,7 +49,7 @@ export const HowItWorksSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex flex-col items-center py-[70px] px-6 md:px-[175px] w-full bg-wwwfigmacomwhite">
+    <section id="how-it-works" className="flex flex-col items-center py-[70px] px-6 md:px-[175px] w-full bg-wwwfigmacomwhite">
       <div className="flex flex-col max-w-[1120px] items-center gap-14 w-full">
         <div className="flex flex-col items-center gap-3.5 relative self-stretch w-full">
           <div className="flex flex-col items-center relative self-stretch w-full">

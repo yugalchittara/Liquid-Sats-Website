@@ -6,19 +6,15 @@ export const HeaderSection = (): JSX.Element => {
   const navLinks = [
     {
       text: "How It Works",
-      href: "https://efb4b355-c372-41bc-b2af-2f030738d0c5-figmaiframepreview.figma.site/preview_page.html#how-it-works",
+      href: "#how-it-works",
     },
     {
       text: "Calculator",
-      href: "https://efb4b355-c372-41bc-b2af-2f030738d0c5-figmaiframepreview.figma.site/preview_page.html#calculator",
+      href: "#calculator",
     },
     {
       text: "FAQ",
-      href: "https://efb4b355-c372-41bc-b2af-2f030738d0c5-figmaiframepreview.figma.site/preview_page.html#faq",
-    },
-    {
-      text: "Docs",
-      href: "https://efb4b355-c372-41bc-b2af-2f030738d0c5-figmaiframepreview.figma.site/preview_page.html",
+      href: "#faq",
     },
   ];
 
@@ -42,8 +38,6 @@ export const HeaderSection = (): JSX.Element => {
               key={index}
               className="font-normal text-wwwfigmacomriver-bed text-sm hover:text-wwwfigmacomblue-ribbon transition-colors"
               href={link.href}
-              rel="noopener noreferrer"
-              target="_blank"
               data-testid={`nav-link-${index}`}
             >
               {link.text}
@@ -55,6 +49,7 @@ export const HeaderSection = (): JSX.Element => {
         <Button 
           className="h-8 px-4 py-2 bg-wwwfigmacomblue-ribbon hover:bg-blue-700 rounded-[6.75px] text-sm font-medium"
           data-testid="button-go-to-app"
+          onClick={() => window.open("https://liquidsat.danlabs.xyz/", "_blank")}
         >
           Go to App
         </Button>
