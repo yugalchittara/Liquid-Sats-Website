@@ -69,7 +69,7 @@ export const FeaturesSection = (): JSX.Element => {
           </h2>
 
           <p className="max-w-[588px] font-normal text-wwwfigmacomriver-bed text-[16.4px] text-center leading-[24.5px]">
-            The most advanced Bitcoin liquidity protocol designed for the modern Bitcoin holder
+            The only bridge-free, cross-chain liquidity protocol for native Bitcoin
           </p>
         </div>
 
