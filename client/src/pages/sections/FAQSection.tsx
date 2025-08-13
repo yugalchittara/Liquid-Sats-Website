@@ -19,7 +19,7 @@ export const FAQSection = (): JSX.Element => {
     },
     {
       question: "Can I repay early?",
-      answer: "Yes, you can repay your loan early at any time with no prepayment penalties. You only pay interest for the time you used the funds.",
+      answer: "Yes, you can repay your loan early at any time with no prepayment penalties.Currently, interest is charged for the full loan term, but we’re working on a feature to charge interest only for the period you use the funds.",
     },
     {
       question: "Is this self-custodial?",
