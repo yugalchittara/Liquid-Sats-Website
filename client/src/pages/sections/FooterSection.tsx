@@ -34,14 +34,11 @@ export const FooterSection = (): JSX.Element => {
           {/* Logo and tagline */}
           <div className="flex flex-col items-start gap-4 flex-1">
             <div className="flex items-center gap-2">
-              <div className="flex items-center justify-center w-7 h-7 bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
-                <span className="font-bold text-wwwfigmacomwhite text-sm">
-                  L
-                </span>
-              </div>
-              <span className="font-bold text-wwwfigmacomwhite text-base">
-                LiquidSat
-              </span>
+              <img 
+                src="/liquidsat-logo.png" 
+                alt="LiquidSat" 
+                className="h-8 w-auto brightness-0 invert"
+              />
             </div>
             <div className="max-w-md">
               <p className="font-normal text-wwwfigmacommischka text-sm leading-relaxed">
