@@ -10,6 +10,10 @@ export const FAQSection = (): JSX.Element => {
   // FAQ data for mapping
   const faqItems = [
     {
+      question: "Is this self-custodial?",
+      answer: "Yes, LiquidSat uses Bitcoin-native infrastructure with script-based escrow, so you maintain control over your Bitcoin throughout the process.",
+    },
+    {
       question: "How do I lock my BTC?",
       answer: "Your BTC is locked using secure, script-based escrow technology that ensures your funds remain safe while being used as collateral.",
     },
@@ -19,11 +23,7 @@ export const FAQSection = (): JSX.Element => {
     },
     {
       question: "Can I repay early?",
-      answer: "Yes, you can repay your loan early at any time with no prepayment penalties.Currently, interest is charged for the full loan term, but we’re working on a feature to charge interest only for the period you use the funds.",
-    },
-    {
-      question: "Is this self-custodial?",
-      answer: "Yes, LiquidSat uses Bitcoin-native infrastructure with script-based escrow, so you maintain control over your Bitcoin throughout the process.",
+      answer: "Yes, you can repay your loan early at any time with no prepayment penalties.Currently, interest is charged for the full loan term, but we're working on a feature to charge interest only for the period you use the funds.",
     },
     {
       question: "What happens if I default?",
