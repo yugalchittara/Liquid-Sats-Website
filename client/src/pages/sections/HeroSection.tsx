@@ -9,14 +9,14 @@ export const HeroSection = (): JSX.Element => {
         <div className="flex flex-col items-start gap-8 flex-1">
           <div className="flex flex-col gap-6">
             <h1 className="font-bold text-wwwfigmacomebony text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight">
-              Unlock Capital.{" "}
+              Native BTC Liquidity.{" "}
               <span className="text-wwwfigmacomblue-ribbon">
                 Stay Bitcoin-True.
               </span>
             </h1>
 
             <p className="font-normal text-wwwfigmacomriver-bed text-base sm:text-lg leading-relaxed max-w-[480px]">
-              Use your BTC without selling. Maintain self-custody while accessing on-chain liquidity.
+              Use your Bitcoin without wrapping, selling, or giving up custody. Access secure liquidity on-chain.
             </p>
           </div>
 
