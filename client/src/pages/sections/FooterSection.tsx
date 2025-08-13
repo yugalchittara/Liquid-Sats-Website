@@ -37,18 +37,23 @@ export const FooterSection = (): JSX.Element => {
             <img 
               src="/liquidsat-logo.png" 
               alt="LiquidSat Logo"
-              className="h-8 w-auto object-contain"
+              className="h-8 w-auto object-contain brightness-0 invert"
+              onLoad={(e) => {
+                // Ensure fallback is hidden when image loads successfully
+                const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                if (fallback) fallback.style.display = 'none';
+              }}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 const fallback = e.currentTarget.nextElementSibling as HTMLElement;
                 if (fallback) fallback.style.display = 'flex';
               }}
             />
-            <div className="hidden items-center gap-2">
-              <div className="w-7 h-7 flex items-center justify-center bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
+            <div className="hidden items-center gap-2" id="footer-logo-fallback">
+              <div className="w-7 h-7 flex items-center justify-center bg-wwwfigmacomorange-primary rounded-[8.75px]">
                 <div className="font-bold text-wwwfigmacomwhite text-sm">L</div>
               </div>
-              <div className="font-bold text-wwwfigmacomebony text-base">
+              <div className="font-bold text-wwwfigmacomwhite text-base">
                 LiquidSat
               </div>
             </div>
