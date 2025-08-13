@@ -39,8 +39,11 @@ export const FooterSection = (): JSX.Element => {
                 alt="LiquidSat" 
                 className="h-8 w-auto brightness-0 invert"
                 onError={(e) => {
-                  console.error('Logo failed to load:', e);
                   e.currentTarget.style.display = 'none';
+                  const fallback = document.createElement('span');
+                  fallback.textContent = 'LiquidSat';
+                  fallback.className = 'font-bold text-xl text-wwwfigmacomwhite';
+                  e.currentTarget.parentElement?.appendChild(fallback);
                 }}
               />
             </div>
