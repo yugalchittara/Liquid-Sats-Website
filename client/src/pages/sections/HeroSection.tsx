@@ -17,7 +17,7 @@ export const HeroSection = (): JSX.Element => {
             </h1>
 
             <p className="font-normal text-wwwfigmacomriver-bed text-base sm:text-lg leading-relaxed max-w-[480px]">
-              Use your Bitcoin without wrapping, selling, or giving up custody. Access secure liquidity on-chain.
+              Use Bitcoin without wrapping, selling, or giving up custody. Unlock secure, on-chain liquidity.
             </p>
           </div>
 
