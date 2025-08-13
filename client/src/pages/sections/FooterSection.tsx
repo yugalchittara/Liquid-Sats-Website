@@ -31,24 +31,34 @@ export const FooterSection = (): JSX.Element => {
     <footer className="w-full bg-wwwfigmacomebony py-12 sm:py-14 px-4 sm:px-6 md:px-12 lg:px-24">
       <div className="flex flex-col items-center gap-8 sm:gap-10 w-full max-w-[1120px] mx-auto">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 w-full">
-          {/* Logo and tagline */}
-          <div className="flex flex-col items-start gap-4 flex-1">
-            <div className="flex items-center gap-2">
-              <div className="flex items-center justify-center w-7 h-7 bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
-                <span className="font-bold text-wwwfigmacomwhite text-sm">
-                  L
-                </span>
+          {/* Logo and description */}
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-3">
+            <img 
+              src="/liquidsat-logo.png" 
+              alt="LiquidSat Logo"
+              className="h-8 w-auto object-contain"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+                const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                if (fallback) fallback.style.display = 'flex';
+              }}
+            />
+            <div className="hidden items-center gap-2">
+              <div className="w-7 h-7 flex items-center justify-center bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
+                <div className="font-bold text-wwwfigmacomwhite text-sm">L</div>
               </div>
-              <span className="font-bold text-wwwfigmacomwhite text-base">
+              <div className="font-bold text-wwwfigmacomebony text-base">
                 LiquidSat
-              </span>
+              </div>
             </div>
-            <div className="max-w-md">
+          </div>
+          <div className="max-w-md">
               <p className="font-normal text-wwwfigmacommischka text-sm leading-relaxed">
                 Bitcoin-backed capital access. No custody. No compromise.
               </p>
             </div>
-          </div>
+        </div>
 
           {/* Button and links */}
           <div className="flex flex-col items-start lg:items-end gap-6 flex-1">

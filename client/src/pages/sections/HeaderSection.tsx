@@ -22,12 +22,12 @@ export const HeaderSection = (): JSX.Element => {
     <header className="fixed top-0 left-0 right-0 z-50 w-full bg-wwwfigmacomwhite border-b shadow-sm">
       <div className="flex items-center justify-between w-full px-4 sm:px-6 md:px-12 lg:px-24 py-3">
         {/* Logo section */}
-        <div className="flex items-center gap-2">
-          {/* Try to load logo image, fallback to text logo if not found */}
+        <div className="flex items-center gap-3">
+          {/* LiquidSat logo image */}
           <img 
-            src="/logo.png" 
+            src="/liquidsat-logo.png" 
             alt="LiquidSat Logo"
-            className="w-7 h-7 rounded-[8.75px] object-contain"
+            className="h-8 w-auto object-contain"
             onError={(e) => {
               // Hide image and show text fallback on error
               e.currentTarget.style.display = 'none';
@@ -36,11 +36,13 @@ export const HeaderSection = (): JSX.Element => {
             }}
           />
           {/* Text fallback logo (hidden by default) */}
-          <div className="hidden w-7 h-7 items-center justify-center bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
-            <div className="font-bold text-wwwfigmacomwhite text-sm">L</div>
-          </div>
-          <div className="font-bold text-wwwfigmacomebony text-base">
-            LiquidSat
+          <div className="hidden items-center gap-2">
+            <div className="w-7 h-7 flex items-center justify-center bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
+              <div className="font-bold text-wwwfigmacomwhite text-sm">L</div>
+            </div>
+            <div className="font-bold text-wwwfigmacomebony text-base">
+              LiquidSat
+            </div>
           </div>
         </div>
 
