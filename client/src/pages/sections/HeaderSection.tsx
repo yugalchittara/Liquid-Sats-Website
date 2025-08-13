@@ -23,7 +23,20 @@ export const HeaderSection = (): JSX.Element => {
       <div className="flex items-center justify-between w-full px-4 sm:px-6 md:px-12 lg:px-24 py-3">
         {/* Logo section */}
         <div className="flex items-center gap-2">
-          <div className="flex w-7 h-7 items-center justify-center bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
+          {/* Try to load logo image, fallback to text logo if not found */}
+          <img 
+            src="/logo.png" 
+            alt="LiquidSat Logo"
+            className="w-7 h-7 rounded-[8.75px] object-contain"
+            onError={(e) => {
+              // Hide image and show text fallback on error
+              e.currentTarget.style.display = 'none';
+              const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+              if (fallback) fallback.style.display = 'flex';
+            }}
+          />
+          {/* Text fallback logo (hidden by default) */}
+          <div className="hidden w-7 h-7 items-center justify-center bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
             <div className="font-bold text-wwwfigmacomwhite text-sm">L</div>
           </div>
           <div className="font-bold text-wwwfigmacomebony text-base">
