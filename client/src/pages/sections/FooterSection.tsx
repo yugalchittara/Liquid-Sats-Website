@@ -33,11 +33,11 @@ export const FooterSection = (): JSX.Element => {
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 w-full">
           {/* Logo and description */}
         <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-3 footer-logo">
+          <div className="flex items-center gap-3">
             <img 
               src="/liquidsat-logo.png" 
               alt="LiquidSat Logo"
-              className="object-contain brightness-0 invert"
+              className="h-12 w-auto object-contain brightness-0 invert"
             />
           </div>
           <div className="max-w-md">

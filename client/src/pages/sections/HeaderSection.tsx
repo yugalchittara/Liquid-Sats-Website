@@ -22,11 +22,11 @@ export const HeaderSection = (): JSX.Element => {
     <header className="fixed top-0 left-0 right-0 z-50 w-full bg-wwwfigmacomwhite border-b shadow-sm">
       <div className="flex items-center justify-between w-full px-4 sm:px-6 md:px-12 lg:px-24 py-3">
         {/* Logo section */}
-        <div className="flex items-center gap-3 navbar-logo">
+        <div className="flex items-center gap-3">
           <img 
             src="/liquidsat-logo.png" 
             alt="LiquidSat Logo"
-            className="object-contain"
+            className="h-12 w-auto object-contain"
           />
         </div>
 
