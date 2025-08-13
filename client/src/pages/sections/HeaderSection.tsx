@@ -40,8 +40,8 @@ export const HeaderSection = (): JSX.Element => {
               if (fallback) fallback.style.display = 'flex';
             }}
           />
-          {/* Text fallback logo (hidden by default) */}
-          <div className="hidden items-center gap-2" id="logo-fallback">
+          {/* Text fallback logo (shown by default since image is failing) */}
+          <div className="flex items-center gap-2" id="logo-fallback">
             <div className="w-7 h-7 flex items-center justify-center bg-wwwfigmacomorange-primary rounded-[8.75px]">
               <div className="font-bold text-wwwfigmacomwhite text-sm">L</div>
             </div>

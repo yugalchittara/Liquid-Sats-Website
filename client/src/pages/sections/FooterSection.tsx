@@ -49,7 +49,7 @@ export const FooterSection = (): JSX.Element => {
                 if (fallback) fallback.style.display = 'flex';
               }}
             />
-            <div className="hidden items-center gap-2" id="footer-logo-fallback">
+            <div className="flex items-center gap-2" id="footer-logo-fallback">
               <div className="w-7 h-7 flex items-center justify-center bg-wwwfigmacomorange-primary rounded-[8.75px]">
                 <div className="font-bold text-wwwfigmacomwhite text-sm">L</div>
               </div>
