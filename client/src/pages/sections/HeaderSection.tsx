@@ -26,7 +26,7 @@ export const HeaderSection = (): JSX.Element => {
           <img 
             src="/liquidsat-logo.png" 
             alt="LiquidSat Logo"
-            className="h-8 w-auto object-contain"
+            className="h-12 w-auto object-contain"
           />
         </div>
 

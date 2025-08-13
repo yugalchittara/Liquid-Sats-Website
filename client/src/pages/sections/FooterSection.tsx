@@ -37,7 +37,7 @@ export const FooterSection = (): JSX.Element => {
             <img 
               src="/liquidsat-logo.png" 
               alt="LiquidSat Logo"
-              className="h-8 w-auto object-contain brightness-0 invert"
+              className="h-12 w-auto object-contain brightness-0 invert"
             />
           </div>
           <div className="max-w-md">
