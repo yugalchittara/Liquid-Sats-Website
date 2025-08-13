@@ -161,3 +161,13 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+@layer components {
+  .navbar-logo img,
+  .footer-logo img {
+    max-height: 3.5rem; /* 56px - much larger than before */
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+}
