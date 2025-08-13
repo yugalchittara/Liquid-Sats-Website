@@ -23,18 +23,12 @@ export const HeaderSection = (): JSX.Element => {
       <div className="flex items-center justify-between w-full px-4 sm:px-6 md:px-12 lg:px-24 py-3">
         {/* Logo section */}
         <div className="flex items-center gap-2">
-          <img 
-            src="/liquidsat-logo.png" 
-            alt="LiquidSat" 
-            className="h-8 w-auto"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-              const fallback = document.createElement('span');
-              fallback.textContent = 'LiquidSat';
-              fallback.className = 'font-bold text-xl text-wwwfigmacomblue-ribbon';
-              e.currentTarget.parentElement?.appendChild(fallback);
-            }}
-          />
+          <div className="flex w-7 h-7 items-center justify-center bg-wwwfigmacomblue-ribbon rounded-[8.75px]">
+            <div className="font-bold text-wwwfigmacomwhite text-sm">L</div>
+          </div>
+          <div className="font-bold text-wwwfigmacomebony text-base">
+            LiquidSat
+          </div>
         </div>
 
         {/* Navigation links - hidden on mobile */}
