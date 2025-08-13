@@ -57,7 +57,7 @@ export const HeroSection = (): JSX.Element => {
                 <p className="text-gray-500 text-xs">Self-Custody</p>
               </div>
               <div className="ml-auto text-right">
-                <div className="font-bold text-gray-900 text-lg">2.5 BTC</div>
+                <div className="font-bold text-gray-900 text-lg">1 BTC</div>
                 <div className="text-green-600 text-sm font-medium">+$125,000</div>
               </div>
             </div>
@@ -76,7 +76,7 @@ export const HeroSection = (): JSX.Element => {
 
               <div className="flex justify-between items-center">
                 <span className="text-gray-600 text-sm">APR</span>
-                <span className="font-semibold text-green-600">9.5%</span>
+                <span className="font-semibold text-green-600">6%</span>
               </div>
             </div>
 
