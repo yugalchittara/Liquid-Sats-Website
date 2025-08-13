@@ -38,6 +38,10 @@ export const FooterSection = (): JSX.Element => {
                 src="/liquidsat-logo.png" 
                 alt="LiquidSat" 
                 className="h-8 w-auto brightness-0 invert"
+                onError={(e) => {
+                  console.error('Logo failed to load:', e);
+                  e.currentTarget.style.display = 'none';
+                }}
               />
             </div>
             <div className="max-w-md">

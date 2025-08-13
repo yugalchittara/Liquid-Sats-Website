@@ -27,6 +27,10 @@ export const HeaderSection = (): JSX.Element => {
             src="/liquidsat-logo.png" 
             alt="LiquidSat" 
             className="h-8 w-auto"
+            onError={(e) => {
+              console.error('Logo failed to load:', e);
+              e.currentTarget.style.display = 'none';
+            }}
           />
         </div>
 
