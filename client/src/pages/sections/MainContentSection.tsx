@@ -41,15 +41,15 @@ export const MainContentSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
           {securityFeatures.map((feature, index) => (
             <Card
               key={`security-feature-${index}`}
-              className="bg-wwwfigmacomwhite rounded-[12.75px] border border-solid"
+              className="bg-wwwfigmacomwhite rounded-[12.75px] border border-solid h-full"
               data-testid={`card-security-${index}`}
             >
-              <CardContent className="p-[29px] text-center">
-                <div className="flex flex-col items-center gap-4">
+              <CardContent className="p-6 text-center">
+                <div className="flex flex-col items-center gap-4 h-full">
                   <div className="flex w-14 h-14 items-center justify-center bg-wwwfigmacomfeta rounded-full">
                     <img
                       className="w-7 h-7"
@@ -60,14 +60,14 @@ export const MainContentSection = (): JSX.Element => {
                   </div>
 
                   <h3 
-                    className="font-bold text-wwwfigmacomebony text-sm leading-[21px]"
+                    className="font-bold text-wwwfigmacomebony text-lg leading-[24px]"
                     data-testid={`text-security-title-${index}`}
                   >
                     {feature.title}
                   </h3>
 
                   <p 
-                    className="font-normal text-wwwfigmacomriver-bed text-[13.6px] leading-[22.8px]"
+                    className="font-normal text-wwwfigmacomriver-bed text-sm leading-[20px]"
                     data-testid={`text-security-description-${index}`}
                   >
                     {feature.description}
