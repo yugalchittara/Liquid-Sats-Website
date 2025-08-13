@@ -13,7 +13,7 @@ export const FeaturesSection = (): JSX.Element => {
       description: "Tiered rates based on loan size and duration.",
     },
     {
-      title: "Borrow at your terms",
+      title: "Borrow on your terms",
       description: "As low as $1000. Configure duration, and raise loan request.",
     },
     {
