@@ -77,14 +77,15 @@ export const HowItWorksSection = (): JSX.Element => {
                     </div>
                   </div>
 
-                  {/* Icon container with light orange background */}
-                  <div className="flex w-16 h-16 items-center justify-center bg-wwwfigmacomorange-light rounded-xl mb-6 mt-4">
-                    {step.icon}
+                  {/* Icon and title container */}
+                  <div className="flex items-center gap-3 mb-4 mt-4">
+                    <div className="flex w-16 h-16 items-center justify-center bg-wwwfigmacomorange-light rounded-xl flex-shrink-0">
+                      {step.icon}
+                    </div>
+                    <h3 className="font-bold text-wwwfigmacomebony text-base leading-[24px]">
+                      {step.title}
+                    </h3>
                   </div>
-
-                  <h3 className="font-bold text-wwwfigmacomebony text-base leading-[24px] mb-3">
-                    {step.title}
-                  </h3>
 
                   <p className="font-normal text-wwwfigmacomriver-bed text-sm leading-[20px] flex-grow">
                     {step.description}

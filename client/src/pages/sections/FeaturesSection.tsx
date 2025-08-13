@@ -82,25 +82,25 @@ export const FeaturesSection = (): JSX.Element => {
               data-testid={`card-feature-${index}`}
             >
               <CardContent className="p-0">
-                <div className="flex flex-col items-start gap-4">
-                  <div className="flex w-12 h-12 items-center justify-center bg-wwwfigmacomorange-light rounded-xl">
-                    {getIcon(index)}
-                  </div>
-
-                  <div className="flex flex-col gap-2">
+                <div className="flex flex-col items-start gap-3">
+                  <div className="flex items-center gap-3">
+                    <div className="flex w-12 h-12 items-center justify-center bg-wwwfigmacomorange-light rounded-xl flex-shrink-0">
+                      {getIcon(index)}
+                    </div>
                     <h3 
                       className="font-bold text-wwwfigmacomebony text-lg leading-[24px]"
                       data-testid={`text-feature-title-${index}`}
                     >
                       {card.title}
                     </h3>
-                    <p 
-                      className="font-normal text-wwwfigmacomriver-bed text-sm leading-[20px]"
-                      data-testid={`text-feature-description-${index}`}
-                    >
-                      {card.description}
-                    </p>
                   </div>
+
+                  <p 
+                    className="font-normal text-wwwfigmacomriver-bed text-sm leading-[20px]"
+                    data-testid={`text-feature-description-${index}`}
+                  >
+                    {card.description}
+                  </p>
                 </div>
               </CardContent>
             </Card>
