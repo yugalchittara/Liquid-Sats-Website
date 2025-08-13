@@ -14,7 +14,7 @@ export const LoanCalculatorSection = (): JSX.Element => {
   const calculateSummary = () => {
     const amount = parseFloat(borrowAmount) || 0;
     const days = parseInt(termLength) || 90;
-    const interestRate = 9.5; // 9.5% APR
+    const interestRate = 6; // 6% APR
     const ltv = 50; // 50% LTV
     
     const collateralValue = amount / (ltv / 100);
