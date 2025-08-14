@@ -109,6 +109,7 @@ export const LoanCalculatorSection = (): JSX.Element => {
                   <Button 
                     className="w-full h-12 bg-gradient-to-r from-wwwfigmacomorange-gradient-start to-wwwfigmacomorange-gradient-end hover:from-wwwfigmacomorange-primary hover:to-wwwfigmacomorange-gradient-end text-white font-medium rounded text-base mt-4"
                     data-testid="button-apply-loan"
+                    onClick={() => window.open("https://app.liquidsat.com/", "_blank")}
                   >
                     Apply for This Loan
                   </Button>
