@@ -25,7 +25,7 @@ export const HeroSection = (): JSX.Element => {
             <Button 
               className="bg-gradient-to-r from-wwwfigmacomorange-gradient-start to-wwwfigmacomorange-gradient-end hover:from-wwwfigmacomorange-primary hover:to-wwwfigmacomorange-gradient-end text-white px-6 py-3 rounded-lg font-medium"
               data-testid="button-go-to-app"
-              onClick={() => window.open("https://liquidsat.danlabs.xyz/", "_blank")}
+              onClick={() => window.open("https://app.liquidsat.com/", "_blank")}
             >
               Go to App
             </Button>
@@ -84,7 +84,7 @@ export const HeroSection = (): JSX.Element => {
             {/* Access Liquidity Button */}
             <button 
               className="w-full bg-gradient-to-r from-wwwfigmacomorange-gradient-start to-wwwfigmacomorange-gradient-end hover:from-wwwfigmacomorange-primary hover:to-wwwfigmacomorange-gradient-end text-white py-3 px-6 rounded-lg font-medium transition-all duration-200"
-              onClick={() => window.open("https://liquidsat.danlabs.xyz/", "_blank")}
+              onClick={() => window.open("https://app.liquidsat.com/", "_blank")}
             >
               Access Liquidity
             </button>

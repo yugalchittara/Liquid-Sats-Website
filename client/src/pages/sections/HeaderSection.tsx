@@ -48,7 +48,7 @@ export const HeaderSection = (): JSX.Element => {
         <Button 
           className="h-8 px-4 py-2 bg-wwwfigmacomblue-ribbon hover:bg-blue-700 rounded-[6.75px] text-sm font-medium"
           data-testid="button-go-to-app"
-          onClick={() => window.open("https://liquidsat.danlabs.xyz/", "_blank")}
+          onClick={() => window.open("https://app.liquidsat.com/", "_blank")}
         >
           Go to App
         </Button>
